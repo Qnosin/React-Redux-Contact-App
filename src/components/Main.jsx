@@ -25,10 +25,10 @@ function Main({className}) {
                 console.log(people)
                 return (
                 <tr>
-                    <td>{people.id}</td>
-                    <td>{people.name}</td>
-                    <td>{people.email}</td>
-                    <td>{people.Phone}</td>
+                    <td><span className='on__small__screen'>id:</span>{people.id}</td>
+                    <td><span className='on__small__screen'>name:</span>{people.name}</td>
+                    <td><span className='on__small__screen'>email:</span>{people.email}</td>
+                    <td><span className='on__small__screen'>phone:</span>{people.Phone}</td>
                     <td><button>Edit</button></td>
                     <td><button onClick={()=> deleteHandle(people.id)}>Delete</button></td>
                 </tr>
