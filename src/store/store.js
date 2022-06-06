@@ -1,5 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { createSlice } from '@reduxjs/toolkit'
+import UpdateFormPage from '../components/UpdateFormPage'
 
 
 const TableSlice = createSlice({
@@ -27,6 +28,13 @@ const TableSlice = createSlice({
             })
         },
         add(state,action){
+            state.peoples.push(action.payload)
+        },
+        Update(state,action){
+            state.peoples = state.peoples.filter((people) =>{
+                return people.id !== action.payload.id
+            })
+            console.log(state.peoples);
             state.peoples.push(action.payload)
         }
     }

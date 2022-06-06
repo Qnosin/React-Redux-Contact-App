@@ -2,7 +2,9 @@ import React from 'react'
 import {useSelector} from 'react-redux'
 import {useDispatch} from 'react-redux';
 import { TableActions,idActions } from '../store/store';
+import { useNavigate } from 'react-router-dom';
 function Main({className}) {
+    let navigate = useNavigate();
     let dispatch = useDispatch();
     let peopleData = useSelector((state) => state.table.peoples);
 
@@ -29,7 +31,7 @@ function Main({className}) {
                     <td><span className='on__small__screen'>name:</span>{people.name}</td>
                     <td><span className='on__small__screen'>email:</span>{people.email}</td>
                     <td><span className='on__small__screen'>phone:</span>{people.Phone}</td>
-                    <td><button>Edit</button></td>
+                    <td><button onClick={()=> navigate(`/edit/${people.id}`)}>Edit</button></td>
                     <td><button onClick={()=> deleteHandle(people.id)}>Delete</button></td>
                 </tr>
                 )

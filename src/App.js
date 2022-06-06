@@ -3,6 +3,7 @@ import { HeaderStyled } from "./components/style/Header.style";
 import Home from "./pages/Home";
 import Adding from "./pages/Adding";
 import Error from "./pages/Error";
+import Edit from "./pages/Edit";
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/add" element={<Adding />}></Route>
           <Route path="*" element={<Error />}></Route>
-          <Route path="/edit:id" element={<Adding />}></Route>
+          <Route path="/edit/:id" element={<Edit />}></Route>
          </Routes>
        </Router>
     </div>
