@@ -8,4 +8,7 @@ export const ButtonToAddStyled = styled(ButtonToAdd)`
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    & button{
+        background-color: aqua;
+    }
 `

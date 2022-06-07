@@ -30,5 +30,12 @@ export const MainStyled = styled(Main)`
             flex-direction: column;
         }
     }
+    & table td button{
+        background-color: red;
+    }
+    & table td button:last-child{
+        background-color: blue;
+
+    }
     
 `

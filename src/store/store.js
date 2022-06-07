@@ -34,7 +34,6 @@ const TableSlice = createSlice({
             state.peoples = state.peoples.filter((people) =>{
                 return people.id !== action.payload.id
             })
-            console.log(state.peoples);
             state.peoples.push(action.payload)
         }
     }
