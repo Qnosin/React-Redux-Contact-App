@@ -32,9 +32,14 @@ export const MainStyled = styled(Main)`
     }
     & table .delete{
         background-color: red;
+        border: none;
+        padding: 1.2rem;
     }
     & table  .edit{
         background-color: lightblue;
+        border: none;
+        padding: 1.2rem;
+        color: black;
 
     }
     

@@ -20,5 +20,9 @@ min-height: 60vh;
 }
 .Submit__btn{
     margin-top: 1rem;
+    padding: 1.2rem;
+    background-color: lightblue;
+    border: none;
+    border-radius: 10px;
 }
 `

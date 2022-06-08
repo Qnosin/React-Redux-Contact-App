@@ -10,5 +10,7 @@ export const ButtonToAddStyled = styled(ButtonToAdd)`
     align-items: center;
     & button{
         background-color: aqua;
+        padding: 1.2rem;
+        border: none;
     }
 `
