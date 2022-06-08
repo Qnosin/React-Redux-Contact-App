@@ -30,11 +30,11 @@ export const MainStyled = styled(Main)`
             flex-direction: column;
         }
     }
-    & table td button{
+    & table .delete{
         background-color: red;
     }
-    & table td button:last-child{
-        background-color: blue;
+    & table  .edit{
+        background-color: lightblue;
 
     }
     

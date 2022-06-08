@@ -31,8 +31,8 @@ function Main({className}) {
                     <td><span className='on__small__screen'>name:</span>{people.name}</td>
                     <td><span className='on__small__screen'>email:</span>{people.email}</td>
                     <td><span className='on__small__screen'>phone:</span>{people.Phone}</td>
-                    <td><button onClick={()=> navigate(`/edit/${people.id}`)}>Edit</button></td>
-                    <td><button onClick={()=> deleteHandle(people.id)}>Delete</button></td>
+                    <td><button className='edit' onClick={()=> navigate(`/edit/${people.id}`)}>Edit</button></td>
+                    <td><button className='delete'  onClick={()=> deleteHandle(people.id)}>Delete</button></td>
                 </tr>
                 )
             })}
