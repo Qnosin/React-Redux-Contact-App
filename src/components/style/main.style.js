@@ -8,6 +8,7 @@ export const MainStyled = styled(Main)`
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
     & .on__small__screen{
         display: none;
         @media screen and (max-width:908px){
@@ -40,7 +41,13 @@ export const MainStyled = styled(Main)`
         border: none;
         padding: 1.2rem;
         color: black;
-
+    }
+    & .profile-pic{
+        @media screen and (min-width:908px){
+            max-width: 20%;
+            display: block;
+        }
+        display: none;
     }
     
 `
